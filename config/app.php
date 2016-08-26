@@ -145,6 +145,20 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         *Instalacion Personal
+         */
+        Styde\Html\HtmlServiceProvider::class,
+
+        // Debug Bar
+        Barryvdh\Debugbar\ServiceProvider::class,
+
+        // Imagen
+        Intervention\Image\ImageServiceProvider::class,
+
+        // Socialite
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
     ],
 
     /*
