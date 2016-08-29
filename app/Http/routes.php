@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.home');
-});
+Route::get('/', ['as' => 'home','uses' => 'HomeController@index',]);
+Route::get('home', ['as' => 'home', 'uses' => 'HomeController@index',]);
+Route::get('about_me', ['as' => 'about_me', 'uses' => 'ProfilesController@home',]);
