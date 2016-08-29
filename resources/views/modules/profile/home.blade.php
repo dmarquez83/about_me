@@ -10,16 +10,20 @@
         <img src="{{ asset('assets/img/digna_marquez.png')}}" class="img-responsive" alt="" />
     </div>
     <div class="col-md-6">
-        <h3 class="uppercase">About Me </h3>
-        <h5>Creative & Lorem ipsum dolor sit amet</h5>
+        <h3 class="uppercase">Digna Marquez </h3>
+        <h5>Desarrolladora Web</h5>
         <div class="h-30"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus </p>
+        <p class="parrafo">Me encanta escribir código conciso, fácil de mantener, valoro la comunicación clara por encima de casi todo lo demás.
+            Mi Meta siempre será Satisfacer las necesidades de la empresa y Fechas límite,  Cuando trabajo en un nuevo proyecto, me gusta hablar con el equipo de trabajo, de modo que pueda tener una comprensión clara de las actividades de cada miembro del equipo para tener una mejor visión del proyecto y cumplir las metas. </p>
 
-        <p>Tum ille: Tu autem cum ipse tantum librorum habeas, quos hic tandem requiris? Esse enim quam vellet iniquus iustus poterat inpune. </p>
+        <p class="parrafo">Tengo la ventaja de tener años de experiencia como gerente y coordinadora del area de desarrollo de sistemas de dos grandes empresas de mi país Venezuela y al mismo tiempo he llevado mi trabajo FreeLance como desarrolladora web y llevar estos dos trabajos en paralelo me a permitido tener suficientes habilidades para llevar a cabo los proyectos de manera satisfactoria. </p>
+    </div>
+    <div class="col-md-12">
+        <p class="parrafo">Te puedo ayudar a modernizar tu sitio web y la marca de tu empresa, creando una plataforma atractiva para que puedas presentar tu negocio. Creando páginas auto administrables, para que puedas tener un blog, actualizar tus productos y darle más vida a tu web. Te Puedo apoyar desde el diseño de tu logo, tarjetas de presentación y mucho más.</p>
         <div class="h-10"></div>
-        <ul class="social-ul">
-            @include('common.public.social')
-        </ul>
+        <!--  <ul class="social-ul">
+             @include('common.public.social')
+        </ul>-->
     </div>
 </div>
 <!-- end Main container -->

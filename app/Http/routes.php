@@ -14,3 +14,8 @@
 Route::get('/', ['as' => 'home','uses' => 'HomeController@index',]);
 Route::get('home', ['as' => 'home', 'uses' => 'HomeController@index',]);
 Route::get('about_me', ['as' => 'about_me', 'uses' => 'ProfilesController@home',]);
+Route::get('services', ['as' => 'services', 'uses' => 'ServicesController@home',]);
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+
+});

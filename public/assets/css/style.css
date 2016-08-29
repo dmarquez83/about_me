@@ -1186,3 +1186,7 @@ textarea:focus {
         padding-left: 0;
     }
 
+    .parrafo {
+        text-align: justify;
+    }
+
