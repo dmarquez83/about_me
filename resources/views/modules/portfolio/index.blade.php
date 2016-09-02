@@ -13,12 +13,12 @@
                 <div class="categories-grid wow fadeInLeft">
                     <nav class="categories text-center">
                         <ul class="portfolio_filter">
-                            <li><a href="" class="active" data-filter="*">All</a></li>
-                            <li><a href="" data-filter=".photography">Photography</a></li>
-                            <li><a href="" data-filter=".logo">Logo</a></li>
-                            <li><a href="" data-filter=".graphics">Graphics</a></li>
-                            <li><a href="" data-filter=".ads">Advertising</a></li>
-                            <li><a href="" data-filter=".fashion">Fashion</a></li>
+                            <li><a href="" class="active" data-filter="*">Todos</a></li>
+                            <li><a href="" data-filter=".photography">Desarrollo de Sistemas</a></li>
+                            <li><a href="" data-filter=".logo">Paginas Web</a></li>
+                            <li><a href="" data-filter=".graphics">Diseño Grafico</a></li>
+                            <li><a href="" data-filter=".ads">Desarrollo a Medida</a></li>
+                            <li><a href="" data-filter=".fashion">Otros</a></li>
                         </ul>
                     </nav>
                 </div>
