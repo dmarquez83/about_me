@@ -32,14 +32,14 @@
 <body>
 
     <!-- Preloader -->
-   <!--  <div id="preloader">
+     <div id="preloader">
         <div class="pre-container">
             <div class="spinner">
                 <div class="double-bounce1"></div>
                 <div class="double-bounce2"></div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- end Preloader -->
 
     <div class="container-fluid">
@@ -70,12 +70,6 @@
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
 
-    <!-- back to top -->
-    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
-    <!-- end back to top -->
-
-
-
     <!-- jQuery -->
     <script src="{{ asset('assets/js/jquery-2.1.1.js') }}"></script>
     <!--  plugins -->
@@ -85,7 +79,7 @@
     <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
 
     <!--  custom script -->
-    <script src="js/custom.js"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 </body>
 

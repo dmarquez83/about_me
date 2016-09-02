@@ -7,23 +7,16 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class ProfilesController extends Controller
+class PortfolioController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-
-    public function home()
-    {
-        return   view('modules.profile.home');
-    }
-
     public function index()
     {
-        //
+        return   view('modules.portfolio.index');
     }
 
     /**

@@ -1,6 +1,3 @@
-    <div class="portfolio-div">
-        <div class="portfolio">
-            <div class="no-padding portfolio_container">
                 <!-- single work -->
                 <div class="col-md-3 col-sm-6  fashion logo">
                     <a href="single-project.html" class="portfolio_item">
@@ -160,8 +157,4 @@
                     </a>
                 </div>
                 <!-- end single work -->
-            </div>
-            <!-- end portfolio_container -->
-        </div>
-        <!-- portfolio -->
-    </div>
+
