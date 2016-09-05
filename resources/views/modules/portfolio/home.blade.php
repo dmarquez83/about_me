@@ -5,8 +5,8 @@
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
-                                    <span>Mockups in seconds</span>
-                                    <em>Fashion / Logo</em>
+                                    <span>TusServicios.com.ve</span>
+                                    <em>Paginas Web</em>
                                 </div>
                             </div>
                         </div>
@@ -37,8 +37,8 @@
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
-                                    <span>Photorealistic smartwatch</span>
-                                    <em>Photography</em>
+                                    <span>Visared</span>
+                                    <em>Desarrollo de Sistemas</em>
                                 </div>
                             </div>
                         </div>
@@ -85,8 +85,8 @@
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
-                                    <span>Photorealistic smartwatch</span>
-                                    <em>Photography</em>
+                                    <span>Vallas y Avisos</span>
+                                    <em>Desarrollo de Sistemas</em>
                                 </div>
                             </div>
                         </div>
