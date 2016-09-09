@@ -10,10 +10,10 @@
         "styde/html": "~1.0",
         "barryvdh/laravel-debugbar": "^2.0@dev",
         "laravel/socialite": "^3.0@dev",
-        "intervention/image": "^2.3"
+        "intervention/image": "^2.3",
+        "fzaninotto/faker": "^1.6"
     },
     "require-dev": {
-        "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
         "phpspec/phpspec": "~2.1"

@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+Use Faker\Factory as Faker;
 /**
  * Created by PhpStorm.
  * User: dmarquez
@@ -10,12 +11,21 @@ use Illuminate\Database\Eloquent\Model;
 class UserTableSeeder extends Seeder
 {
     public function run(){
-        \DB::table('users')->insert(array(
-           'name'     => 'Root',
-           'email'    => 'marquezdigna83@gmail.com',
-           'password' =>  \Hash::make('123456'),
-           'created_at' => new DateTime,
-           'updated_at' =>  new Datetime,
-        ));
+
+        $faker = Faker::create();
+
+        for($i =0; $i <30; $i ++){
+            \DB::table('users')->insert(array(
+                'first_name'     => $faker->firstName,
+                'last_name'      => $faker->lastName,
+                'email'          => $faker->unique()->email,
+                'password'       => \Hash::make('123456'),
+                'type'           => 'user',
+                'created_at'     => new DateTime,
+                'updated_at'     => new Datetime,
+            ));
+        }
+
+
     }
 }
