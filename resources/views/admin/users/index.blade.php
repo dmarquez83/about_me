@@ -7,6 +7,8 @@
                     Usuarios
                 </div>
                 <div class="panel-body">
+                   <!-- <p>Hay {{ $users->lastPage() }} Páginas</p>-->
+                    <p>Hay {{ $users->total() }} Usuarios</p>
                    <table class="table table-striped">
                        <tr>
                            <th>#</th>
