@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Redirect;
 
 class UsersController extends Controller
 {
@@ -31,7 +33,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.users.create');
     }
 
     /**
@@ -40,9 +42,15 @@ class UsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Redirector $redirect)
     {
-        //
+       //dd($request); ver los datos que vienen en el formulario
+
+        $user = new User($request->all());
+
+        $user->save();
+
+        return $redirect->route('admin.users.index');
     }
 
     /**

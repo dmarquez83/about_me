@@ -7,6 +7,11 @@
                     Usuarios
                 </div>
                 <div class="panel-body">
+                    <p>
+                        <a class="btn btn-default" href="{{ route('admin.users.create') }}" role="button">
+                            Crear
+                        </a>
+                    </p>
                    <!-- <p>Hay {{ $users->lastPage() }} Páginas</p>-->
                     <p>Hay {{ $users->total() }} Usuarios</p>
                    <table class="table table-striped">
@@ -19,7 +24,7 @@
                        @foreach($users as $user)
                            <tr>
                                <td>{{ $user->id }}</td>
-                               <td>{{ $user->name }}</td>
+                               <td>{{ $user->FullName }}</td>
                                <td>{{ $user->email }}</td>
                                <td>
                                    <a href="">Editar</a>
