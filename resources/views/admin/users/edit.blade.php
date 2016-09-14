@@ -14,6 +14,7 @@
                     {!! Form::close() !!}
                 </div>
             </div>
+            @include('admin.users.partials.delete')
         </div>
     </div>
 @endsection

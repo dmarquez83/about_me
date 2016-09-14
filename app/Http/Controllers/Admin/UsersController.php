@@ -11,6 +11,7 @@ use App\User;
 use App\Http\Requests;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
 
 class UsersController extends Controller
 {
@@ -98,6 +99,15 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //dd('Eliminando :'.$id);
+        //User::destroy($id);
+
+        $user = User::findOrFail($id);
+
+        $user->delete();
+
+        Session::flash('message',$user->FullName.' fue Eliminado de Nuestro Registro');
+
+        return redirect()->route('admin.users.index');
     }
 }

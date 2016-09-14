@@ -6,6 +6,9 @@
                 <div class="panel-heading">
                     Usuarios
                 </div>
+                @if (Session::has('message'))
+                    <p class="alert alert-success">{{ Session::get('message') }}</p>
+                @endif
                 <div class="panel-body">
                     <p>
                         <a class="btn btn-default" href="{{ route('admin.users.create') }}" role="button">
