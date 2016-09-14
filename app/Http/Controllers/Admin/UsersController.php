@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\User;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 
 class UsersController extends Controller
 {
@@ -72,7 +72,8 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::findOrFail($id);
+        return view('admin.users.edit', compact('user'));
     }
 
     /**
@@ -82,9 +83,14 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id,  Redirector $redirect)
     {
-        //
+        $user = User::findOrFail($id);
+        $user->fill($request->all());
+        $user->save();
+        return $redirect->route('admin.users.index');
+
+        //return redirect()->back(); //con este redirecciona al mismo formulario
     }
 
     /**

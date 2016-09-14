@@ -4,12 +4,12 @@
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Nuevo Usuario
+                    Editar Usuario: {{ $user->FullName }}
                 </div>
                 <div class="panel-body">
-                    {!! Form::open(['route' => 'admin.users.store', 'POST'  ]) !!}
+                    {!! Form::model($user, ['route' => ['admin.users.update', $user], 'method' => 'PUT']) !!}
                         @include('admin.users.partials.fields')
-                        <button type="submit" class="btn btn-default">Crear Usuario</button>
+                        <button type="submit" class="btn btn-default">Actualizar Usuario</button>
                     {!! Form::close() !!}
                 </div>
             </div>

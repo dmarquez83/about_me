@@ -43,6 +43,9 @@ class User extends Model implements AuthenticatableContract,
 
     public function setPasswordAttribute($value){
         //$this->attributes['password']=\Hash::make($value);/
-        $this->attributes['password']=bcrypt($value);
+        if( !empty($value)){
+            $this->attributes['password']=bcrypt($value);
+        }
+
     }
 }
