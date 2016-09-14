@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e769b214-81c9-4700-bead-058b9cd8e7c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateuserRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/users/partials/messager.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/EditUserRequest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/CreateuserRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateuserRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" />
     </list>
     <ignored path="about_me.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +41,8 @@
       <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.0">
-              <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+            <state vertical-scroll-proportion="-82.0">
+              <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
               <folding>
                 <element signature="e#46#74#0#PHP" expanded="true" />
               </folding>
@@ -50,11 +50,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateuserRequest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EditUserRequest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/EditUserRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8294931">
+              <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+              <folding>
+                <element signature="e#37#67#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateuserRequest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateuserRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58064514">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state vertical-scroll-proportion="-30.0">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -74,7 +86,17 @@
         <entry file="file://$PROJECT_DIR$/resources/views/admin/users/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-9.0">
-              <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+              <caret line="9" column="61" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/users/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.0">
+              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -125,12 +147,13 @@
         <option value="$PROJECT_DIR$/resources/views/admin/users/partials/fields.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/partials/table.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/partials/messager.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/CreateuserRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/EditUserRequest.php" />
       </list>
     </option>
   </component>
@@ -485,6 +508,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../back-tusservicios" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -581,14 +605,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/users/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -893,14 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2764977">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/users/partials/fields.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5253456">
@@ -913,14 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.0">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -949,10 +949,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.0">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.0">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.0">
-          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+        <state vertical-scroll-proportion="-82.0">
+          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
           <folding>
             <element signature="e#46#74#0#PHP" expanded="true" />
           </folding>
@@ -961,9 +977,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateuserRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58064514">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state vertical-scroll-proportion="-30.0">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/EditUserRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8294931">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+          <folding>
+            <element signature="e#37#67#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

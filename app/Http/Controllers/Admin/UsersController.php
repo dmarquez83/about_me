@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Http\Requests\CreateuserRequest;
+use App\Http\Requests\EditUserRequest;
 use App\User;
 use App\Http\Requests;
 use Illuminate\Routing\Redirector;
@@ -79,12 +80,12 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id,  Redirector $redirect)
+    public function update(EditUserRequest $request, $id)
     {
         $user = User::findOrFail($id);
         $user->fill($request->all());
         $user->save();
-        return $redirect->route('admin.users.index');
+        return redirect()->route('admin.users.index');
 
         //return redirect()->back(); //con este redirecciona al mismo formulario
     }

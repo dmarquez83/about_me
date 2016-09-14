@@ -7,6 +7,7 @@
                     Editar Usuario: {{ $user->FullName }}
                 </div>
                 <div class="panel-body">
+                    @include('admin.users.partials.messager')
                     {!! Form::model($user, ['route' => ['admin.users.update', $user], 'method' => 'PUT']) !!}
                         @include('admin.users.partials.fields')
                         <button type="submit" class="btn btn-default">Actualizar Usuario</button>
