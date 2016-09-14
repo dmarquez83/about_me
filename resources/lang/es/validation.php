@@ -103,6 +103,12 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => array(
+        'email' => 'Correo Electronico',
+        'password' => 'Contraseña',
+        'type' => 'Tipo',
+        'first_name' => 'Nombre',
+        'last_name' => 'Apellido',
+    ),
 
 ];

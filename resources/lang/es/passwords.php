@@ -25,6 +25,8 @@ return [
 
     'credentials' => 'Esta información no coincide con nuestros registros.',
 
-    'forgot'   => 'olvidaste tu contraseña ?'
+    'forgot'   => 'olvidaste tu contraseña ?',
+
+    'invalid_credentials' => 'El Usuario y/o contraseña no es Válido'
 
 ];

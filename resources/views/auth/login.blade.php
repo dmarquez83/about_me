@@ -11,6 +11,7 @@
                     </div>-->
                     {!! Form::open(['route' => 'auth/login', 'class' => 'form-horizontal']) !!}
                     <div class="box-body">
+                        @include('admin.users.partials.messager')
                         <div class="form-group">
                             <label class="col-sm-2 control-label" for="inputEmail3">{{ trans('form.label.email') }}</label>
                             <div class="col-sm-10">

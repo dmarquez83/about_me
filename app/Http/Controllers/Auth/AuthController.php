@@ -33,6 +33,14 @@ class AuthController extends Controller
         $this->middleware('guest', ['except' => 'getLogout']);
     }
 
+    protected function getFailedLoginMessage()
+    {
+       /* return Lang::has('auth.failed')
+            ? Lang::get('auth.failed')
+            : 'These credentials do not match our records.';*/
+        return trans('passwords.invalid_credentials');
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
