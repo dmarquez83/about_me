@@ -7,6 +7,7 @@
                     Nuevo Usuario
                 </div>
                 <div class="panel-body">
+                    @include('admin.users.partials.messager')
                     {!! Form::open(['route' => 'admin.users.store', 'POST'  ]) !!}
                         @include('admin.users.partials.fields')
                         <button type="submit" class="btn btn-default">Crear Usuario</button>

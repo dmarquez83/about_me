@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\User;
 use Illuminate\Http\Request;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
+
+use App\Http\Requests\CreateuserRequest;
+use App\User;
+use App\Http\Requests;
 use Illuminate\Routing\Redirector;
-use Illuminate\Support\Facades\Redirect;
-use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Validator;
 
 class UsersController extends Controller
 {
@@ -42,15 +43,10 @@ class UsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Redirector $redirect)
+    public function store(CreateuserRequest  $request)
     {
-       //dd($request); ver los datos que vienen en el formulario
-
-        $user = new User($request->all());
-
-        $user->save();
-
-        return $redirect->route('admin.users.index');
+        $user = User::create($request->all());
+        return redirect()->route('admin.users.index');
     }
 
     /**
