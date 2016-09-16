@@ -5,7 +5,8 @@ elixir(function(mix) {
         .styles([
         './resources/assets/css/style_pruebas_gulp.css',
         './resources/assets/css/nav.css'
-    ], 'public/assets/css/app.css', null)
-        .copy('./resources/assets/css/bootstrap.min.css', 'public/assets/css')
-        .copy('./resources/assets/css/style.css', 'public/assets/css')
+    ], './public/css/app.css', null)
+        .copy('./resources/assets/css/bootstrap.min.css', 'public/css')
+        .copy('./resources/assets/css/style.css', 'public/css')
+        .copy('./resources/assets/img/', 'public/img/')
 });

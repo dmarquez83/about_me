@@ -10,11 +10,11 @@
     <link rel="icon" href="{{ asset('assets/img/fav.png') }}" type="image/x-icon">
 
     <!-- Bootstrap -->
-     {!! Html::style('assets/css/bootstrap.min.css') !!}
+     {!! Html::style('css/bootstrap.min.css') !!}
      {!! Html::style('assets/ionicons/css/ionicons.min.css') !!}
 
     <!-- main css -->
-    {!! Html::style('assets/css/style.css') !!} 
+    {!! Html::style('css/style.css') !!}
 
     @yield('styles')
 

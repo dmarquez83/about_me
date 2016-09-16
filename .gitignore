@@ -4,7 +4,8 @@ Homestead.yaml
 Homestead.json
 .env
 .phpstorm.meta.php
-public/assets/css
+public/css
+public/img
 .idea
 /bower_components
 composer.lock
