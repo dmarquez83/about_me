@@ -52,7 +52,7 @@ class User extends Model implements AuthenticatableContract,
     public function scopeName($query, $name){
         if(trim($name) != ""){
             $query->where(\DB::raw("first_name||' '||last_name"),"LIKE","%$name%");
+            //esto se puede arreglar creando un campo full name en la Bd y ya no tendria que utilizar el facades DB
         }
-
     }
 }
