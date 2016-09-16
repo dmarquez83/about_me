@@ -77,10 +77,11 @@
     <script src="{{ asset('assets/js/menu.js') }}"></script>
     <script src="{{ asset('assets/js/animated-headline.js') }}"></script>
     <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
-
     <!--  custom script -->
     <script src="{{ asset('assets/js/custom.js') }}"></script>
-
+    <!-- scripts -->
+       @yield('scripts')
+    <!-- footer -->
 </body>
 
 </html>
