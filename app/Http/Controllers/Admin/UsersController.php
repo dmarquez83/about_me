@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 
 use App\Http\Requests\CreateuserRequest;
 use App\Http\Requests\EditUserRequest;
-use App\User;
+use App\Models\User;
 use App\Http\Requests;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Validator;
