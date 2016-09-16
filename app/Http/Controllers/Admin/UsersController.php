@@ -21,11 +21,13 @@ class UsersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-      $users =  User::paginate();
-
+     //dd($request->get('name'));
      // dd($users);
+      //$users =  User::orderBy('id','DESC')->paginate();
+      //usando scope se crea en la clase user
+      $users =  User::name($request->get('name'))->orderBy('id','DESC')->paginate();
 
       return view('admin.users.index', compact('users'));
     }
@@ -102,6 +104,7 @@ class UsersController extends Controller
     {
         //dd('Eliminando :'.$id);
         //User::destroy($id);
+        //abort(500);
 
         $user = User::findOrFail($id);
 
@@ -110,7 +113,10 @@ class UsersController extends Controller
         $message=$user->FullName.' fue Eliminado de Nuestro Registro';
 
         if($request->ajax()){
-            return $message;
+            return response()->json([
+              'id' => $user->id,
+              'message' => $message
+            ]);
         }
 
         Session::flash('message',$message);

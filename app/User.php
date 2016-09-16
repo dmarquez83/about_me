@@ -48,4 +48,11 @@ class User extends Model implements AuthenticatableContract,
         }
 
     }
+
+    public function scopeName($query, $name){
+        if(trim($name) != ""){
+            $query->where(\DB::raw("first_name||' '||last_name"),"LIKE","%$name%");
+        }
+
+    }
 }

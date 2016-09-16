@@ -10,9 +10,15 @@
                     <p class="alert alert-success">{{ Session::get('message') }}</p>
                 @endif
                 <div class="panel-body">
+                    {!! Form::open(['route' => 'admin.users.index', 'method' => 'GET','class' =>'navbar-form navbar-left pull-right', 'role' => 'search']) !!}
+                        <div class="form-group">
+                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nombre de Usuario']) !!}
+                        </div>
+                        <button type="submit" class="btn btn-default">Buscar</button>
+                    {!! Form::close() !!}
                     <p>
                         <a class="btn btn-default" href="{{ route('admin.users.create') }}" role="button">
-                            Crear
+                            Nuevo Usuario
                         </a>
                     </p>
                    <!-- <p>Hay {{ $users->lastPage() }} Páginas</p>-->
@@ -44,7 +50,10 @@ $(document).ready(function(){
         row.fadeOut(); //desaparecer la fila antes de enivar la peticion ajax
 
         $.post(url, data, function (result) {
-            alert(result);
+            alert(result.message);
+        }).fail(function(){
+            alert('El usuario no fue Eliminado');
+            row.show();
         });
 
     });
