@@ -1,26 +1,11 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    watch = require('gulp-watch');
-    elixir = require('laravel-elixir');
-
-var config = {
-    scssDir: './resources/assets/scss',
-    cssDir: './public/assets/css'
-};
-
-gulp.task('style', function(){
-    gulp.src(config.scssDir + '/*.scss')
-        .pipe(sass())
-        .on('error', sass.logError)
-        .pipe(gulp.dest(config.cssDir))
-});
-
-gulp.task('watch', function(){
-    watch(config.scssDir + '/**/*.scss', function(){
-        gulp.start('style');
-    });
-});
+var  elixir = require('laravel-elixir');
 
 elixir(function(mix) {
-    mix.less('app.less');
+    mix.sass('app.scss')
+        .styles([
+        './resources/assets/css/style_pruebas_gulp.css',
+        './resources/assets/css/nav.css'
+    ], 'public/assets/css/app.css', null)
+        .copy('./resources/assets/css/bootstrap.min.css', 'public/assets/css')
+        .copy('./resources/assets/css/style.css', 'public/assets/css')
 });

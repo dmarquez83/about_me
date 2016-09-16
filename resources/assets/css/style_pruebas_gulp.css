@@ -1,0 +1,14 @@
+.main {
+    width: 80%;
+}
+.main-container {
+    padding: 100px 0;
+}
+.center {
+    text-align: center;
+}
+
+.color {
+    color: #ffbf00;
+    font-size: 11px;
+}

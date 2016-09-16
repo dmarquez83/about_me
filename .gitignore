@@ -3,3 +3,8 @@
 Homestead.yaml
 Homestead.json
 .env
+.phpstorm.meta.php
+public/assets/css
+.idea
+/bower_components
+composer.lock
