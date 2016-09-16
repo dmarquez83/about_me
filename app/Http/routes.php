@@ -32,7 +32,7 @@ Route::get('login/{provider}',['uses' => 'Auth\AuthController@login','as'   => '
 /*******************************FIN LOGIN******************************************/
 
 /*******************************ADMINISTRADOR******************************************/
-Route::group(['prefix' => 'admin', 'namespace' =>'Admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'is_admin'], 'namespace' =>'Admin'], function () {
 
     Route::resource('users','UsersController');
 

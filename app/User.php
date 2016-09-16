@@ -55,4 +55,8 @@ class User extends Model implements AuthenticatableContract,
             //esto se puede arreglar creando un campo full name en la Bd y ya no tendria que utilizar el facades DB
         }
     }
+
+    public function isAdmin(){
+        return $this->type === 'admin';
+    }
 }
