@@ -4,8 +4,8 @@ var gulp = require('gulp'),
     elixir = require('laravel-elixir');
 
 var config = {
-    scssDir: '.resources/assets/scss',
-    cssDir: '.public/assets/css'
+    scssDir: './resources/assets/scss',
+    cssDir: './public/assets/css'
 };
 
 gulp.task('style', function(){
