@@ -26,12 +26,12 @@ class IsAdmin
        //dd($this->auth->user());
         if( ! $this->auth->user()->isAdmin()){ //si el usuario no es administrador
 
-            $this->auth->logout();//si no es admin lo desconecto y lo redirijo al login
+            $this->auth->logout();//si no es admin lo desconecto y lo redirijo al login, se puede cambiar eso redireccionando al home con un msj que no tiene permiso para entrar
 
             if ($request->ajax()) {
                 return response('Unauthorized.', 401);
             } else {
-                return redirect()->guest('auth/login');
+                return redirect()->to('auth/login');//cambie el gue por to para que cuando redirecciones no se quede pegado en el ultimo acceso
             }
         }
         //retornar un msj que indique por que fue redireccionado
