@@ -17,4 +17,6 @@ return [
 
     'next'     => 'Siguiente &raquo;',
 
+    'back'     => 'Regresar &raquo;',
+
 ];

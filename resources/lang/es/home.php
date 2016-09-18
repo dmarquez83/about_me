@@ -1,7 +1,8 @@
 <?php
 return [
     'header' => array(
-        'title' => 'tuSServicios.com.ve | Profesionales Especializados',
+        'title' => 'Grupo Trical',
+         'session' => 'Iniciar Session'
     )
 
 ];

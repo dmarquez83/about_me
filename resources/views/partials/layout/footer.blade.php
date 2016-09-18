@@ -1,3 +1,1 @@
-<footer class="main-footer">
-            <p class="pull-right">Copyright 2015 @tusservicios.com.ve</p>
-</footer>
+<div class="copyright">Copyright 2016 &copy;  Grupo Trical. </div>

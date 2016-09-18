@@ -29,7 +29,7 @@ class UsersController extends Controller
       //usando scope se crea en la clase user
       $users =  User::name($request->get('name'))->orderBy('id','DESC')->paginate();
 
-      return view('admin.users.index', compact('users'));
+      return view('modules.admin.users.index', compact('users'));
     }
 
     /**
@@ -39,7 +39,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        return view('admin.users.create');
+        return view('modules.admin.users.create');
     }
 
     /**
@@ -74,7 +74,7 @@ class UsersController extends Controller
     public function edit($id)
     {
         $user = User::findOrFail($id);
-        return view('admin.users.edit', compact('user'));
+        return view('modules.admin.users.edit', compact('user'));
     }
 
     /**

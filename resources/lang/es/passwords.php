@@ -27,6 +27,8 @@ return [
 
     'forgot'   => 'olvidaste tu contraseña ?',
 
-    'invalid_credentials' => 'El Usuario y/o contraseña no es Válido'
+    'invalid_credentials' => 'El Usuario y/o contraseña no es Válido',
+
+    'enter_email' => 'Introduzca su dirección de correo electrónico para restablecer la contraseña.'
 
 ];
